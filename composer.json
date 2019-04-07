@@ -1,5 +1,5 @@
 {
-    "name": "jimdo/prometheus_client_php",
+    "name": "campanda/prometheus-client",
     "authors": [
         {
             "name": "Joscha",
@@ -8,6 +8,10 @@
         {
             "name": "Jan Brauer",
             "email": "jan.brauer@jimdo.com"
+        },
+        {
+            "name": "Helmut Hoffervon Ankershoffen",
+            "email": "cto@campanda.com"
         }
     ],
     "require": {
