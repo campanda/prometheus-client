@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Prometheus\\": "src/"
+            "Campanda\\Prometheus\\": "src/"
         }
     },
     "autoload-dev": {
