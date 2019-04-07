@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Prometheus\Storage;
+namespace Campanda\Prometheus\Storage;
 
 
-use Prometheus\MetricFamilySamples;
+use Campanda\Prometheus\MetricFamilySamples;
 use RuntimeException;
 
 class APC implements Adapter
@@ -20,6 +20,10 @@ class APC implements Adapter
         $metrics = array_merge($metrics, $this->collectGauges());
         $metrics = array_merge($metrics, $this->collectCounters());
         return $metrics;
+    }
+
+    public function clear() {
+        $this->flushAPC();
     }
 
     public function updateHistogram(array $data)

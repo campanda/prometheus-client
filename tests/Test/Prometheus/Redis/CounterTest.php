@@ -3,7 +3,7 @@
 
 namespace Test\Prometheus\Redis;
 
-use Prometheus\Storage\Redis;
+use Campanda\Prometheus\Storage\Redis;
 use Test\Prometheus\AbstractCounterTest;
 
 /**

@@ -1,9 +1,9 @@
 <?php
-namespace Prometheus\Storage;
+namespace Campanda\Prometheus\Storage;
 
-use Prometheus\Collector;
-use Prometheus\MetricFamilySamples;
-use Prometheus\Sample;
+use Campanda\Prometheus\Collector;
+use Campanda\Prometheus\MetricFamilySamples;
+use Campanda\Prometheus\Sample;
 
 interface Adapter
 {
@@ -21,4 +21,6 @@ interface Adapter
     public function updateGauge(array $data);
 
     public function updateCounter(array $data);
+
+    public function clear();
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Prometheus;
+namespace Campanda\Prometheus;
 
 
-use Prometheus\Storage\Adapter;
+use Campanda\Prometheus\Storage\Adapter;
 
 class Counter extends Collector
 {

@@ -4,10 +4,10 @@
 namespace Test\Prometheus;
 
 use PHPUnit_Framework_TestCase;
-use Prometheus\Histogram;
-use Prometheus\MetricFamilySamples;
-use Prometheus\Sample;
-use Prometheus\Storage\Adapter;
+use Campanda\Prometheus\Histogram;
+use Campanda\Prometheus\MetricFamilySamples;
+use Campanda\Prometheus\Sample;
+use Campanda\Prometheus\Storage\Adapter;
 
 
 /**

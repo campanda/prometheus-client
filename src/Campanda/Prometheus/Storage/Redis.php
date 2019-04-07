@@ -1,13 +1,13 @@
 <?php
 
-namespace Prometheus\Storage;
+namespace Campanda\Prometheus\Storage;
 
 
-use Prometheus\Counter;
-use Prometheus\Exception\StorageException;
-use Prometheus\Gauge;
-use Prometheus\Histogram;
-use Prometheus\MetricFamilySamples;
+use Campanda\Prometheus\Counter;
+use Campanda\Prometheus\Exception\StorageException;
+use Campanda\Prometheus\Gauge;
+use Campanda\Prometheus\Histogram;
+use Campanda\Prometheus\MetricFamilySamples;
 
 class Redis implements Adapter
 {
@@ -57,6 +57,10 @@ class Redis implements Adapter
     public static function setPrefix($prefix)
     {
         self::$prefix = $prefix;
+    }
+
+    public function clear() {
+        $this->flushRedis();
     }
 
     public function flushRedis()

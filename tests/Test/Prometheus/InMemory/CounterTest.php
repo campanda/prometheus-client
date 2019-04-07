@@ -3,7 +3,7 @@
 
 namespace Test\Prometheus\InMemory;
 
-use Prometheus\Storage\InMemory;
+use Campanda\Prometheus\Storage\InMemory;
 use Test\Prometheus\AbstractCounterTest;
 
 /**

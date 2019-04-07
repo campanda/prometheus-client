@@ -4,7 +4,7 @@
 namespace Test\Prometheus\Redis;
 
 use function class_exists;
-use Prometheus\Storage\Redis;
+use Campanda\Prometheus\Storage\Redis;
 use Test\Prometheus\AbstractCollectorRegistryTest;
 
 /**

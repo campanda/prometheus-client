@@ -5,12 +5,12 @@ namespace Test\Prometheus;
 
 
 use PHPUnit_Framework_TestCase;
-use Prometheus\CollectorRegistry;
-use Prometheus\Exception\MetricsRegistrationException;
-use Prometheus\Histogram;
-use Prometheus\RenderTextFormat;
-use Prometheus\Storage\Adapter;
-use Prometheus\Storage\Redis;
+use Campanda\Prometheus\CollectorRegistry;
+use Campanda\Prometheus\Exception\MetricsRegistrationException;
+use Campanda\Prometheus\Histogram;
+use Campanda\Prometheus\RenderTextFormat;
+use Campanda\Prometheus\Storage\Adapter;
+use Campanda\Prometheus\Storage\Redis;
 
 abstract class AbstractCollectorRegistryTest extends PHPUnit_Framework_TestCase
 {

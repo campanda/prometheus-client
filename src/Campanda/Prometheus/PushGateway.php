@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Prometheus;
+namespace Campanda\Prometheus;
 
 
 use GuzzleHttp\Client;

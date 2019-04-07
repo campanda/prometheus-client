@@ -3,7 +3,7 @@
 
 namespace Test\Prometheus\APC;
 
-use Prometheus\Storage\APC;
+use Campanda\Prometheus\Storage\APC;
 use Test\Prometheus\AbstractGaugeTest;
 
 /**

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Prometheus\Exception;
+namespace Campanda\Prometheus\Exception;
 
 
 /**

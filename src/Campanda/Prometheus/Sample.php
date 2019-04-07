@@ -1,6 +1,6 @@
 <?php
 
-namespace Prometheus;
+namespace Campanda\Prometheus;
 
 
 class Sample

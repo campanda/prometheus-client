@@ -1,9 +1,9 @@
 <?php
 
-namespace Prometheus\Storage;
+namespace Campanda\Prometheus\Storage;
 
 
-use Prometheus\MetricFamilySamples;
+use Campanda\Prometheus\MetricFamilySamples;
 use RuntimeException;
 
 class InMemory implements Adapter
@@ -22,6 +22,10 @@ class InMemory implements Adapter
         $metrics = array_merge($metrics, $this->internalCollect($this->gauges));
         $metrics = array_merge($metrics, $this->collectHistograms());
         return $metrics;
+    }
+
+    public function clear() {
+        $this->flushMemory();
     }
 
     public function flushMemory()

@@ -4,9 +4,9 @@ namespace Test;
 use GuzzleHttp\Client;
 use PHPUnit_Framework_TestCase;
 
-use Prometheus\CollectorRegistry;
-use Prometheus\PushGateway;
-use Prometheus\Storage\APC;
+use Campanda\Prometheus\CollectorRegistry;
+use Campanda\Prometheus\PushGateway;
+use Campanda\Prometheus\Storage\APC;
 
 class BlackBoxPushGatewayTest extends PHPUnit_Framework_TestCase
 {

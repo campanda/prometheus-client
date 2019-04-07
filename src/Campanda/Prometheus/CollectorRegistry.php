@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Prometheus;
+namespace Campanda\Prometheus;
 
 
-use Prometheus\Exception\MetricNotFoundException;
-use Prometheus\Exception\MetricsRegistrationException;
-use Prometheus\Storage\Adapter;
-use Prometheus\Storage\Redis;
+use Campanda\Prometheus\Exception\MetricNotFoundException;
+use Campanda\Prometheus\Exception\MetricsRegistrationException;
+use Campanda\Prometheus\Storage\Adapter;
+use Campanda\Prometheus\Storage\Redis;
 
 class CollectorRegistry
 {
@@ -47,6 +47,11 @@ class CollectorRegistry
             return self::$defaultRegistry = new static(new Redis());
         }
         return self::$defaultRegistry;
+    }
+
+    public function clear()
+    {
+        $this->storageAdapter->clear();
     }
 
     /**
